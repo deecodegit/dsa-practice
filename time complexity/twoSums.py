@@ -13,12 +13,12 @@ print(twoSumM1([2, 7, 11, 15], 9))
 def twoSumM2(nums, target):
     seen = {}
 
-    for i, nums in enumerate(nums):
-        complement = target - nums
+    for i, n in enumerate(nums):
+        complement = target - n
 
         if complement in seen:
             return (seen[complement], i)
-        seen[nums] = i
+        seen[n] = i
 
 print(twoSumM2([2, 7, 11, 15], 9)) 
 
